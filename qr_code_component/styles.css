@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: skyblue;
+}
+
+#qr-container{
+    display: flex;
+    flex-direction: column;
+    height:325px;
+    width:200px;
+    padding:10px;
+    border-radius:10px;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+
+.qr-img{
+    border-radius: 5px;
+    max-height:200px;
+    max-width:200px;
+}
+
+.qr-title{
+    text-align: center;
+    font-weight: bold;
+    margin-top:1rem;
+}
+
+.qr-description{
+    text-align: center;
+    color:grey;
+    font-size:12px;
+}
+
+.attribution{
+    margin-top:2rem;
+}
