@@ -43,15 +43,15 @@ body{
     margin-left:1rem;
 }
 
-#email-form{
+.email-form{
   display:flex;
   flex-direction: column;
   margin-top:2rem;
 }
-#email-form label{
+.email-form label{
     font-size:14px;
 }
-#email-form input{
+.email-form input{
     padding:0.75rem;
     font-size: 16px;
     margin: 1rem 0;
@@ -60,11 +60,32 @@ body{
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
-#email-form button{
+.email-form button{
     color: var(--white);
     margin-top:1rem;
     padding:1rem;
     border-radius: 5px;
     background-color: var(--dark-slate-grey);
     border: none;
+}
+
+.success-msg{
+    padding: 0 1rem;
+    margin-top: 50%;
+}
+
+.success-msg h1{
+    font-size:36px;
+}
+
+.success-msg button{
+    background-color: var(--dark-slate-grey);
+    margin-top:auto;
+    border:none;
+    width:100%;
+    padding:1.25rem;
+    border-radius:5px;
+    color:var(--white);
+    font-weight: bold;
+    margin-top: 15rem;
 }
