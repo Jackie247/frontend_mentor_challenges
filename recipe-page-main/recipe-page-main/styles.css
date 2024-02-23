@@ -1,0 +1,110 @@
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--eggshell);
+    font-size:16px;
+    font-family: "Outfit", "Young Serif", serif;
+    margin:0px;
+}
+
+h1,h2,h3{
+    font-family:"Young Serif"
+}
+
+h2{
+    color: var(--nutmeg)
+}
+
+.center{
+    display:flex;
+    min-height:100vh;
+    justify-content: center;
+    align-items:center;
+    margin: auto auto;
+}
+
+.recipe-container{
+    background-color: var(--white);
+}
+
+@media(min-width: 1440px){
+    .recipe-container{
+        width:600px;
+    }
+}
+
+.recipe-container section{
+    padding:0 2rem;
+}
+
+.recipe-img{
+    max-width: 375px;
+}
+
+/* OVERVIEW SECTION */
+
+#recipe-overview h1{
+    font-size: 32px;
+}
+
+#recipe-overview article{
+    background-color: var(--rose-white);
+    padding: 0.5rem 1.5rem;
+}
+
+#recipe-overview h3{
+    color: var(--dark-raspberry);
+    font-family: "Outfit";
+}
+
+#recipe-overview ul li{
+    margin-top:10px;
+}
+
+/* INGREDIENTS SECTION */
+
+#ingredients{
+}
+
+#ingredients li{
+    padding: 0.25rem;
+}
+
+/* INSTRUCTIONS SECTION */
+
+#instructions li{
+    margin-top: 0.75rem;
+}
+
+/* NUTRITION SECTION */
+#nutrition{
+    margin-bottom: 2rem;
+}
+#nutrition table{
+    width:100%;
+    border-collapse: separate;
+}
+
+#nutrition table td{
+    padding:1rem;
+}
+
+.line-break{
+    border-bottom: 1px solid grey;
+    opacity: 25%;
+    width:75%;
+    margin:0 auto;
+}
