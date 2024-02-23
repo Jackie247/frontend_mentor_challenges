@@ -70,7 +70,7 @@ body{
 }
 
 .success-msg{
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin-top: 50%;
 }
 
@@ -83,9 +83,13 @@ body{
     margin-top:auto;
     border:none;
     width:100%;
-    padding:1.25rem;
+    padding:1rem;
     border-radius:5px;
     color:var(--white);
     font-weight: bold;
-    margin-top: 15rem;
+    margin-top: 14rem;
+}
+
+.hidden{
+    display:none
 }
