@@ -30,10 +30,8 @@ h2{
 
 .center{
     display:flex;
-    min-height:100vh;
+    align-items: center;
     justify-content: center;
-    align-items:center;
-    margin: auto auto;
 }
 
 .recipe-container{
@@ -41,8 +39,13 @@ h2{
 }
 
 @media(min-width: 1440px){
+    .center{
+        padding:5rem 0;
+    }
+
     .recipe-container{
         width:600px;
+        border-radius: 15px;
     }
 }
 
@@ -53,6 +56,15 @@ h2{
 .recipe-img{
     max-width: 375px;
 }
+
+@media(min-width: 1440px){
+    .recipe-img{
+        max-width:100%;
+        padding:20px;
+        border-radius: 1.5rem;
+    }
+}
+
 
 /* OVERVIEW SECTION */
 
@@ -75,10 +87,6 @@ h2{
 }
 
 /* INGREDIENTS SECTION */
-
-#ingredients{
-}
-
 #ingredients li{
     padding: 0.25rem;
 }
@@ -95,11 +103,12 @@ h2{
 }
 #nutrition table{
     width:100%;
-    border-collapse: separate;
+    border-collapse: collapse;
 }
 
 #nutrition table td{
     padding:1rem;
+    border-bottom: solid 1px rgb(225,225,225,0.8);
 }
 
 .line-break{
