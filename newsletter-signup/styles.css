@@ -17,40 +17,13 @@ body{
     font-family: "Roboto";
     background-color: var(--white);
 }
-
-@media(min-width: 1440px){
-    body{
-        background-color: var(--charcoal-grey);
-    }
-    main{
-        display:flex;
-        justify-content: center;
-        padding-top:10%;
-    }
-
-    .image{
-        grid-area: image;
-        width:100%;
-        height:100%;
-        border-radius:10px;
-    }
-    
-    .text{
-        grid-area: text;
-        padding: 1rem 0;
-    }
-    .sign-up-holder{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "text image";
-        background-color: var(--white);
-        border-radius:15px;
-        padding:10px;
-        width:700px;
-    }
-
-    
+main{
+    min-height:100vh;
 }
+.image{
+    width:100%;
+}
+
 .info{
     padding:0 2rem;
 }
@@ -102,7 +75,15 @@ body{
     background-color: var(--dark-slate-grey);
     border: none;
 }
-
+.email-form button:hover{
+    cursor: pointer;
+}
+.email-form button:hover {
+    background-image: linear-gradient(to right, var(--tomato) , orange);
+}
+.email-form button:focus-visible{
+    background-image: linear-gradient(to right, var(--tomato) , orange);
+}
 .success-msg{
     padding: 0 2rem;
     margin-top: 50%;
@@ -121,9 +102,80 @@ body{
     border-radius:5px;
     color:var(--white);
     font-weight: bold;
-    margin-top: 14rem;
+    margin-top:1rem;
+}
+.success-msg button{
+    cursor:pointer;
+}
+.success-msg button:hover {
+    background-image: linear-gradient(to right, var(--tomato) , orange);
+}
+.success-msg button:focus-visible{
+    background-image: linear-gradient(to right, var(--tomato) , orange);
+}
+.hidden{
+    display:none !important
 }
 
-.hidden{
-    display:none
+@media(min-width: 500px){
+    body{
+        background-color: var(--charcoal-grey);
+    }
+    main{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image {
+        width: 100%;
+        height: 100%; 
+        border-radius: 10px;
+    }
+    .text{
+        padding: 0 2rem;
+    }
+    .sign-up-holder{
+        background-color: var(--white);
+        border-radius:15px;
+        padding-bottom:1rem;
+        min-width:500px;
+    }
+    .success-msg{
+        background-color: var(--white);
+        margin: 0 2rem;
+        padding:2rem;
+        min-width:400px;
+        max-width:400px;
+        max-height:500px;
+        border-radius:20px;
+    }
+    .succes-msg button{
+        margin:0;
+    }
+}
+
+@media(min-width: 1000px){
+    body{
+        background-color: var(--charcoal-grey);
+    }
+
+    .image{
+        grid-area: image;
+        border-radius:10px;
+        background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+        background-position: center; 
+        background-size: cover; 
+    }
+    .text{
+        grid-area: text;
+    }
+    .sign-up-holder{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text image";
+        background-color: var(--white);
+        border-radius:15px;
+        padding:20px;
+        width:700px;
+    }
 }
