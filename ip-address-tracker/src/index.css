@@ -9,7 +9,17 @@
 
 body{
   font-size:18px;
-  font-family: 'Rubik'
+  font-family: 'Rubik';
+  padding: 0 1rem;
+}
+
+.search-bar{
+  width:100%;
+}
+
+#map{
+  height:200px;
+  width:100%;
 }
 
 /* TABLET SIZING */
