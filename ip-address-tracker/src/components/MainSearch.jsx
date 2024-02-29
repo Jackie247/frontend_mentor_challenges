@@ -34,7 +34,7 @@ function MainSearch({ setCoords }) {
       <div id="ip-search-holder">
         <input
           className="search-bar"
-          placeholder="Enter IP address"
+          placeholder="Search for any IP address or domain"
           onChange={handleInputChange}
           value={inputValue}
         />
