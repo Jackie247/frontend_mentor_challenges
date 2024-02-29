@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function MainSearch() {
+function MainSearch({ setCoords }) {
   const [inputValue, setInputValue] = useState('');
   const [data, setData] = useState(null);
 
@@ -10,8 +10,7 @@ function MainSearch() {
   };
 
   const handleClick = () => {
-    const apiUrl = `https://geo.ipify.org/api/v2/country?apiKey=at_l3Ay7b4UfMxJAHTs9Z84v8TmNMFoT&ipAddress=${inputValue}`;
-
+    const apiUrl = `https://geo.ipify.org/api/v2/country,city?apiKey=at_l3Ay7b4UfMxJAHTs9Z84v8TmNMFoT&ipAddress=${inputValue}`;
     // Make a GET request
     fetch(apiUrl).then((response) => {
       if (!response.ok) {
@@ -19,15 +18,17 @@ function MainSearch() {
       }
       return response.json();
     }).then((jsonData) => {
-      console.log(jsonData);
       setData(jsonData);
+      if (jsonData.location) {
+        setCoords({ lat: jsonData.location.lat, lng: jsonData.location.lng });
+      }
     }).catch((error) => {
       console.log('Error', error);
     });
   };
 
   return (
-    <section>
+    <section className="main-content">
       <h1 className="title">IP Address Tracker</h1>
 
       <div id="ip-search-holder">
@@ -44,7 +45,7 @@ function MainSearch() {
         </button>
       </div>
 
-      <div>
+      <div className="data-display">
         <div className="data-holder">
           <span className="data-label">IP ADDRESS</span>
           <span className="data-value">{data?.ip}</span>

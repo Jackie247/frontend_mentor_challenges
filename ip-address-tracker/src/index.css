@@ -2,29 +2,150 @@
   --very-dark-grey: hsl(0, 0%, 17%);
   --dark-grey: hsl(0, 0%, 59%);
 }
-
 *,::before,::after{
   box-sizing: border-box;
 }
-
+#root{
+  margin:0;
+  padding:0;
+}
 body{
   font-size:18px;
   font-family: 'Rubik';
-  padding: 0 1rem;
+  margin:0;
+  padding:0;
 }
-
+.background{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100vw;
+  z-index:1;
+}
+.bg-img{
+  background-image: url('./assets/images/pattern-bg-mobile.png');
+  background-size: contain;
+  height:100%;
+  width:100%;
+  border: none;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  color:white
+}
+.data-display{
+  display:flex;
+  flex-direction: column;
+  height:300px;
+  background-color: white;
+  border-radius: 20px;;
+  z-index: 1;
+}
+.main-content{
+  z-index: 1;
+  position: relative;
+  padding: 0 2rem;
+}
 .search-bar{
+  width:80%;
+  padding:1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border:none;
+  font-size: 20px;;
+}
+.search-bar:focus-visible{
+  outline:none
+}
+#ip-search-holder{
+  display: flex;
+  height:50px;
+  margin-bottom:2rem;
   width:100%;
 }
-
+#ip-search-holder button{
+  width:20%;
+  border:none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--very-dark-grey);
+}
+.data-holder{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.data-label{
+  font-size: 12px;
+  margin-bottom:4px;
+  color:var(--dark-grey)
+}
+.data-value{
+  font-size:1.5rem;
+  font-weight: 500;
+}
 #map{
-  height:200px;
+  position: absolute;
+  bottom:0;
+  left:0;
+  height:65%;
   width:100%;
 }
 
 /* TABLET SIZING */
 @media (min-width: 640px){
-
+  .background{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    max-width:100%;
+    z-index:1;
+  }
+  .main-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .bg-img{
+    height:25%;
+    background-image: url('./assets/images/pattern-bg-desktop.png');
+    background-position:center;
+    background-size: cover;
+  }
+  #map{
+    height:75%;
+    width:100%;
+  }
+  .data-display{
+    flex-direction: row;
+    height:125px; 
+    width:85%;
+    min-width:650px;
+  }
+  .data-holder{
+    padding: 0 1rem;
+  }
+  .data-label{
+    width:100%;
+    display:flex;
+    justify-content: start;
+  }
+  .data-value{
+    width:100%;
+    display:flex;
+    justify-content: start;
+  }
+  #ip-search-holder{
+    display:flex;
+    justify-content: center;
+    width:600px;
+  }
 }
 
 /* DESKTOP SIZING */
