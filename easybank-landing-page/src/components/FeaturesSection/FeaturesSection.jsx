@@ -16,6 +16,7 @@ export default function FeaturesSection() {
       {
         featureData.map((data) => (
           <Feature
+            key={data.id}
             img={data.imgSrc}
             title={data.title}
             description={data.description}
