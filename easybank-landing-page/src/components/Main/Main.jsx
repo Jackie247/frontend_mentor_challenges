@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Hero/Hero';
 import FeaturesSection from '../FeaturesSection/FeaturesSection';
 import ArticlesSection from '../ArticlesSection/ArticlesSection';
+import Footer from '../Footer/Footer';
 
 export default function Main() {
   return (
@@ -9,6 +10,7 @@ export default function Main() {
       <Hero />
       <FeaturesSection />
       <ArticlesSection />
+      <Footer />
     </main>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section>
+    <section className="pb-20">
       <div>
         <img className="absolute z-10 top-0 -mt-14 px-2" src="/images/image-mockups.png" alt="" />
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="400">
