@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function MobileNavbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function toggleMenu() {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
-    <div className="sm:hidden">
-      <div className="flex justify-between">
+    <div className="sm:hidden absolute z-20 w-full">
+      <div className="flex justify-between bg-white p-6">
         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
           <defs>
             <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
@@ -20,22 +26,42 @@ export default function MobileNavbar() {
             </g>
           </g>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11">
-          <g fill="#2D314D" fillRule="evenodd">
-            <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
-          </g>
-        </svg>
+        <button onClick={toggleMenu}>
+          {
+            menuOpen ? (
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19">
+                <g fill="#2D314D" fillRule="evenodd">
+                  <path d="M.868.661l16.97 16.97-.706.708L.162 1.369z" />
+                  <path d="M.161 17.632L17.131.662l.708.706-16.97 16.97z" />
+                </g>
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11">
+                <g fill="#2D314D" fillRule="evenodd">
+                  <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
+                </g>
+              </svg>
+            )
+          }
+        </button>
       </div>
 
-      <nav>
-        <ul className="hidden">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#careers">Careers</a></li>
-        </ul>
-      </nav>
+      {
+        menuOpen && (
+          <div>
+            <nav id="mobile-nav" className="m-4 bg-white p-8 rounded-md ">
+              <ul className="flex flex-col items-center space-y-6">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#careers">Careers</a></li>
+              </ul>
+            </nav>
+            <div className="fixed inset-0 gradient-dark-background bg-opacity-50 -z-10" />
+          </div>
+        )
+      }
     </div>
   );
 }

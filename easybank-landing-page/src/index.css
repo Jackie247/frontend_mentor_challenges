@@ -29,3 +29,12 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+.gradient-background {
+  background: linear-gradient(to left, rgb(43, 183, 218), rgb(49, 211, 92));
+  color:white;
+}
+
+.gradient-dark-background{
+  background: linear-gradient(rgb(0, 0, 0, 0.75) 50%, rgb(255, 255, 255, 0.5));
+}
