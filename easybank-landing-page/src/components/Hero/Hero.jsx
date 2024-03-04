@@ -25,9 +25,9 @@ export default function Hero() {
           </g>
         </svg>
       </div>
-      <div className="">
+      <div>
         <h1 className="text-4xl text-center">Next generation digital banking</h1>
-        <p className="my-4 text-center text-grayish-blue">
+        <p className="my-6 text-center text-grayish-blue">
           Take your financial life online. Your Easybank account will be a one-stop-shop for
           spending,saving, budgeting, investing, and much more.
         </p>
