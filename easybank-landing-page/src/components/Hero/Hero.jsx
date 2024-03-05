@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="pb-20">
       <div>
-        <img className="absolute z-10 top-0 -mt-14 px-2" src="/images/image-mockups.png" alt="" />
+        <img className="absolute z-10 top-0 -mt-6 px-2" src="/images/image-mockups.png" alt="" />
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="400">
           <defs>
             <linearGradient id="c" x1="0%" x2="99.58%" y1="36.139%" y2="63.745%">
