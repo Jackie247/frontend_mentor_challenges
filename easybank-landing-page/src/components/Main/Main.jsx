@@ -10,7 +10,6 @@ export default function Main() {
       <Hero />
       <FeaturesSection />
       <ArticlesSection />
-      <Footer />
     </main>
   );
 }
