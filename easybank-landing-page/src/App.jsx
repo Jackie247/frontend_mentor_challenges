@@ -5,11 +5,11 @@ import Header from './components/Header/Header';
 
 function App() {
   return (
-    <>
+    <div className="bg-light-grayish-blue">
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 
