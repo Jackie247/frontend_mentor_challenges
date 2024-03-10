@@ -5,7 +5,7 @@ import ArticlesSection from '../ArticlesSection/ArticlesSection';
 
 export default function Main() {
   return (
-    <main>
+    <main className="z-40">
       <Hero />
       <FeaturesSection />
       <ArticlesSection />
