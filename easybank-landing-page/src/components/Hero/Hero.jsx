@@ -6,7 +6,7 @@ export default function Hero() {
       {/* SVG CONTAINERS */}
       <div>
         {/* MOBILE HERO */}
-        <img className="absolute z-10 top-0 -mt-14 px-2 min-h-[450px] max-h-[450px] w-full sm:min-h-[500px] sm:max-h-[500px] sm:w-1/2 sm:right-0 xl:max-h-[900px] xl:max-w-[600px]" src="/images/image-mockups.png" alt="" />
+        <img className="absolute z-10 top-0 -mt-14 px-2 min-h-[450px] max-h-[450px] w-full sm:min-h-[500px] sm:max-h-[500px] sm:w-1/2 sm:right-0 xl:max-h-[1250px] xl:max-w-[800px]" src="/images/image-mockups.png" alt="" />
         <svg className="w-full sm:hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="400">
           <defs>
             <linearGradient id="c" x1="0%" x2="99.58%" y1="36.139%" y2="63.745%">
@@ -66,7 +66,7 @@ export default function Hero() {
           </g>
         </svg>
         {/* DESKTOP HERO */}
-        <svg className="hidden sm:block sm:absolute sm:hidden lg:absolute lg:block lg:right-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1271" height="1034" viewBox="200 200 671 434">
+        <svg className="hidden sm:block sm:absolute sm:hidden lg:absolute lg:block lg:right-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1271" height="1034" viewBox="200 165 700 650">
           <defs>
             <linearGradient id="c" x1="0%" x2="99.58%" y1="36.147%" y2="63.736%">
               <stop offset="0%" stopColor="#33D35E" />
@@ -85,7 +85,7 @@ export default function Hero() {
             <path fill="url(#c)" d="M207.445 265.84 341.73 400.112a100 100 0 0 0 70.708 29.286h70.693a100 100 0 0 1 70.708 29.287l161.04 161.027A100 100 0 0 0 785.584 649h388.853c44.964 0 81.415-36.45 81.415-81.414a81.414 81.414 0 0 0-23.848-57.57l-86.392-86.386c-12.033-12.032-12.034-31.54-.002-43.574a30.812 30.812 0 0 1 21.788-9.025c17.017 0 30.812-13.795 30.812-30.812a30.81 30.81 0 0 0-9.025-21.788L993.85 123.11a100 100 0 0 0-70.708-29.287H688.7a100 100 0 0 1-70.708-29.287l-35.253-35.25A100 100 0 0 0 512.032 0H276.88c-31.769 0-57.523 25.754-57.523 57.523a57.523 57.523 0 0 0 16.85 40.676l28.761 28.76c15.886 15.884 15.887 41.64.003 57.525a40.676 40.676 0 0 1-28.764 11.915c-22.465 0-40.677 18.211-40.677 40.676a40.676 40.676 0 0 0 11.915 28.764z" />
           </g>
         </svg>
-        <svg className="hidden sm:block sm:absolute sm:hidden lg:absolute lg:block lg:right-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1271" height="1034" viewBox="200 200 671 434">
+        <svg className="hidden sm:block sm:absolute sm:hidden lg:absolute lg:block lg:right-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1271" height="1034" viewBox="200 165 700 650">
           <defs>
             <linearGradient id="c" x1="0%" x2="99.58%" y1="36.147%" y2="63.736%">
               <stop offset="0%" stopColor="#33D35E" />
@@ -98,7 +98,7 @@ export default function Hero() {
             </filter>
             <path id="b" d="M69.445 572.84 203.73 707.112a100 100 0 0 0 70.708 29.286h70.693a100 100 0 0 1 70.708 29.287l161.04 161.027A100 100 0 0 0 647.584 956h388.853c44.964 0 81.415-36.45 81.415-81.414a81.414 81.414 0 0 0-23.848-57.57l-86.392-86.386c-12.033-12.032-12.034-31.54-.002-43.574a30.812 30.812 0 0 1 21.788-9.025c17.017 0 30.812-13.795 30.812-30.812a30.81 30.81 0 0 0-9.025-21.788L855.85 430.11a100 100 0 0 0-70.708-29.287H550.7a100 100 0 0 1-70.708-29.287l-35.253-35.25A100 100 0 0 0 374.032 307H138.88c-31.769 0-57.523 25.754-57.523 57.523a57.523 57.523 0 0 0 16.85 40.676l28.761 28.76c15.886 15.884 15.887 41.64.003 57.525a40.676 40.676 0 0 1-28.764 11.915c-22.465 0-40.677 18.211-40.677 40.676a40.676 40.676 0 0 0 11.915 28.764z" />
           </defs>
-          <g fill="none" fillRule="evenodd" transform="translate(400, 00)">
+          <g fill="none" fillRule="evenodd" transform="translate(500, 50)">
             <use xlinkHref="#b" fill="#000" filter="url(#a)" />
             <use xlinkHref="#b" fill="#38AD57" />
             <path fill="url(#c)" d="M207.445 265.84 341.73 400.112a100 100 0 0 0 70.708 29.286h70.693a100 100 0 0 1 70.708 29.287l161.04 161.027A100 100 0 0 0 785.584 649h388.853c44.964 0 81.415-36.45 81.415-81.414a81.414 81.414 0 0 0-23.848-57.57l-86.392-86.386c-12.033-12.032-12.034-31.54-.002-43.574a30.812 30.812 0 0 1 21.788-9.025c17.017 0 30.812-13.795 30.812-30.812a30.81 30.81 0 0 0-9.025-21.788L993.85 123.11a100 100 0 0 0-70.708-29.287H688.7a100 100 0 0 1-70.708-29.287l-35.253-35.25A100 100 0 0 0 512.032 0H276.88c-31.769 0-57.523 25.754-57.523 57.523a57.523 57.523 0 0 0 16.85 40.676l28.761 28.76c15.886 15.884 15.887 41.64.003 57.525a40.676 40.676 0 0 1-28.764 11.915c-22.465 0-40.677 18.211-40.677 40.676a40.676 40.676 0 0 0 11.915 28.764z" />
