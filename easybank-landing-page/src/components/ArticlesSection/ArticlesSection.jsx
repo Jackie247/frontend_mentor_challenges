@@ -4,17 +4,20 @@ import articleData from '../../data/articles.json';
 
 export default function ArticlesSection() {
   return (
-    <section className="py-14 px-4 bg-very-light-gray">
-      <h2 className="text-3xl my-8 text-center">Latest Articles</h2>
-      {articleData.map((data) => (
-        <Article
-          key={data.id}
-          img={data.imgSrc}
-          author={data.author}
-          title={data.title}
-          description={data.description}
-        />
-      ))}
+    <section id="articles" className="py-14 px-4 bg-very-light-gray xl:px-36">
+      <h2 className="text-3xl my-8 text-center xl:text-start">Latest Articles</h2>
+      <div className="sm:grid sm:grid-cols-2 sm:gap-4 sm:justify-items-center xl:flex xl:justify-between">
+        {articleData.map((data) => (
+          <Article
+            key={data.id}
+            img={data.imgSrc}
+            author={data.author}
+            title={data.title}
+            description={data.description}
+          />
+        ))}
+      </div>
+
     </section>
   );
 }

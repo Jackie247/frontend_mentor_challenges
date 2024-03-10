@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="pb-20 sm:pb-0 sm:relative sm:py-10 lg:py-18">
+    <section id="home" className="pb-20 sm:pb-0 sm:relative sm:py-10 lg:py-18">
       {/* SVG CONTAINERS */}
       <div>
         {/* MOBILE HERO */}
